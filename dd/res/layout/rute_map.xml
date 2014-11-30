@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		<com.thx.ty_publicbike.MyRouteMapView android:id="@+id/bmapView"
+		    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		    android:clickable="true"     
+		/>
+	    <LinearLayout
+	        android:id="@+id/rute_map_bottom"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dip"
+	        android:layout_alignWithParentIfMissing="false"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="false" >
+		
+			 <Button
+			     android:id="@+id/pre"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/pre_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />
+			 <Button
+			     android:id="@+id/next"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/next_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />
+	
+	    </LinearLayout>
+	    <RelativeLayout
+            android:id="@+id/zoom_action"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@id/rute_map_bottom">
+
+            <ImageView
+                android:id="@+id/map_zoom_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/map_zoom_up" 
+                android:onClick="doMapZoomUp"/>
+
+            <ImageView
+                android:id="@+id/map_zoom_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/map_zoom_up"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/map_zoom_down" 
+                android:onClick="doMapZoomDown"/>
+        </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ECECEC" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.thx.ty_publicbike.userdefined.CenterRadioButton
+                    android:id="@+id/radioStartPage"
+                    style="@style/RadioBtnTabbar.BusinessContacts"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:checked="true"
+                    android:text="@string/map_radio_area"
+                    android:textColor="@color/bottom_text_bg_liu" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/map_radio_bottombar_line" />
+
+                <com.thx.ty_publicbike.userdefined.CenterRadioButton
+                    android:id="@+id/radioSecondPage"
+                    style="@style/RadioBtnTabbar.Message"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/map_radio_search" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/map_radio_bottombar_line" />
+
+                <com.thx.ty_publicbike.userdefined.CenterRadioButton
+                    android:id="@+id/radioThirdPage"
+                    style="@style/RadioBtnTabbar.Contacts"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/map_radio_line" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/map_radio_bottombar_line" />
+
+                <com.thx.ty_publicbike.userdefined.CenterRadioButton
+                    android:id="@+id/radioFourthPage"
+                    style="@style/RadioBtnTabbar.Setting"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/map_radio_more" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_synchron_count"
+            android:layout_width="@dimen/synchron_width"
+            android:layout_height="@dimen/synchron_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/count_bg_dian" >
+
+            <TextView
+                android:id="@+id/synchron_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

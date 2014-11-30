@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="site_err">
+        <item>站点位置</item>
+        <item>站点故障</item>
+        <item>站点停用/铲除</item> 
+    </string-array>
+    <string-array name="opinion">
+        <item>功能建议</item>
+        <item>界面意见</item>
+        <item>您的需求</item>
+        <item>操作意见</item>
+        <item>点位纠错</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="type">
+        <item>失物招领</item>
+        <item>寻物启事</item>
+        <item>其他</item>
+    </string-array>
+</resources>

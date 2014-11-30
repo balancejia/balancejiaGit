@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="@drawable/alert_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tishi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="提示"
+            android:textColor="#77a66c"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="您确定要退出应用程序？"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp" >
+
+        <View
+            android:id="@+id/center_line"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/opinion_linear_margin"
+            android:layout_toLeftOf="@id/center_line"
+            android:background="@drawable/btn_gengxin"
+            android:minWidth="@dimen/min_button_width"
+            android:layout_marginLeft="5dp"
+            android:onClick="doCancle"
+            android:padding="5dp"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/opinion_linear_margin"
+            android:layout_toRightOf="@id/center_line"
+            android:background="@drawable/btn_ok"
+            android:minWidth="@dimen/min_button_width"
+            android:layout_marginRight="5dp"
+            android:onClick="doExit"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</LinearLayout>

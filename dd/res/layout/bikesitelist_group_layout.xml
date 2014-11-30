@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef">
+
+    <TextView
+        android:id="@+id/gtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:text="500"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"/>
+    <ImageView  android:id="@+id/gimg" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

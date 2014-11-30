@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rute_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" >
+
+        <LinearLayout
+            android:id="@+id/rute_counterchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rute_counterchange" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/oneedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/rute_counterchange"
+            android:background="@drawable/rute_et_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:id="@+id/rute_iv_left_start_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rute_qi"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="起"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/rute_point" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rute_et_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/rute_iv_left_start_set"
+                android:background="@null"
+                android:hint="@string/rute_start"
+                android:maxEms="10"
+                android:paddingRight="35dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/rute_et_text"
+                android:textColorHint="@color/rute_hint" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/rute_location_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rute_location" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/oneedit"
+            android:layout_below="@id/oneedit"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rute_et_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:id="@+id/rute_iv_left_end_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rute_zhong"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="终"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/rute_point" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rute_et_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/rute_iv_left_end_set"
+                android:background="@null"
+                android:hint="@string/rute_end"
+                android:maxEms="10"
+                android:paddingRight="35dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/rute_et_text"
+                android:textColorHint="@color/rute_hint" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/rute_location_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rute_location" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--
+    <RelativeLayout
+        android:id="@+id/rute_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/rute_margin_top" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rute_et_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal" >
+
+                        <com.thx.ty_publicbike.userdefined.CustomEditText
+                            android:id="@+id/rute_et_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rute_et_bg"
+                            android:drawableRight="@drawable/et_delete"
+                            android:hint="@string/rute_start"
+                            android:maxEms="10"
+                            android:paddingLeft="38dp"
+                            android:paddingRight="8dp"
+                            android:singleLine="true"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/rute_et_text"
+                            android:textColorHint="@color/rute_hint" >
+                        </com.thx.ty_publicbike.userdefined.CustomEditText>
+
+                        <ImageView
+                            android:id="@+id/rute_iv_left_start_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="-30dp"
+                            android:layout_toLeftOf="@id/rute_et_start"
+                            android:background="@drawable/rute_point" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/rute_location_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/rute_iv_margin_left"
+                        android:background="@drawable/rute_location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/rute_margin_top"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.thx.ty_publicbike.userdefined.CustomEditText
+                            android:id="@+id/rute_et_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rute_et_bg"
+                            android:drawableRight="@drawable/et_delete"
+                            android:hint="@string/rute_end"
+                            android:maxEms="10"
+                            android:paddingLeft="38dp"
+                            android:paddingRight="8dp"
+                            android:singleLine="true"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/rute_et_text"
+                            android:textColorHint="@color/rute_hint" >
+                        </com.thx.ty_publicbike.userdefined.CustomEditText>
+
+                        <ImageView
+                            android:id="@+id/rute_iv_left_end_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="-30dp"
+                            android:layout_toLeftOf="@id/rute_et_end"
+                            android:background="@drawable/rute_point" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/rute_location_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/rute_iv_margin_left"
+                        android:background="@drawable/rute_location" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rute_counterchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rute_et_layout"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rute_counterchange" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    -->
+
+    <Button
+        android:id="@+id/rute_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rute_relative_layout"
+        android:layout_marginLeft="@dimen/rute_margin"
+        android:layout_marginRight="@dimen/rute_margin"
+        android:layout_marginTop="@dimen/rute_margin_top"
+        android:background="@drawable/lostandfind_button"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/rute_search"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/rute_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rute_search"
+        android:layout_marginLeft="@dimen/rute_margin"
+        android:layout_marginRight="@dimen/rute_margin"
+        android:layout_marginTop="@dimen/rute_margin_top"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/left_item_bg"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

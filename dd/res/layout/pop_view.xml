@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+   >
+
+   <RelativeLayout
+       android:layout_width="102dp"
+       android:layout_height="40dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/map_mypostion_background" >
+
+       <TextView
+           android:id="@+id/map_bubbleTitle"
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:ellipsize="marquee"
+           android:text="@string/map_position_searchname"
+           android:textColor="@color/white"
+           android:textSize="12sp" />
+
+       <ImageView
+           android:id="@+id/map_bubbleLine"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_marginLeft="2dp"
+           android:layout_marginTop="6dp"
+           android:layout_toRightOf="@id/map_bubbleTitle"
+           android:src="@drawable/map_mypostion_line" />
+
+       <ImageView
+           android:id="@+id/map_bubbleSearch"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="8dp"
+           android:layout_toRightOf="@id/map_bubbleLine"
+           android:src="@drawable/map_mypostion_search" />
+   </RelativeLayout>
+
+</RelativeLayout>

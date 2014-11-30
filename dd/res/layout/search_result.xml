@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray" >
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/top_only_back" />
+
+    <ListView
+        android:id="@+id/main_search_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_margin="@dimen/search_margin"
+        android:layout_marginBottom="@dimen/rute_margin"
+        android:layout_marginLeft="@dimen/rute_margin"
+        android:layout_marginRight="@dimen/rute_margin"
+        android:layout_marginTop="@dimen/rute_margin_top"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/left_item_bg" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+     <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <RadioGroup
+                    android:id="@+id/view_pager_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/view_pager_point_one"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/view_pager_point"
+                        android:button="@null"
+                        android:checked="true"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/view_pager_point_two"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/view_pager_point"
+                        android:button="@null"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/view_pager_point_three"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/view_pager_point"
+                        android:button="@null"
+                        android:enabled="false" />
+                </RadioGroup>
+    <Button 
+        android:id="@+id/go_login"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:background="#175E00"
+        android:text="立即体验"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

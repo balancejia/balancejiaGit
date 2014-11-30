@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="@color/light_gray" >
+
+    <RadioGroup
+        android:id="@+id/main_search_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/radioBikesite"
+            style="@style/MyRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/search_by_bikesite"
+            android:textColor="@color/rute_et_text" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioLandmark"
+            style="@style/MyRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/search_by_landmark"
+            android:textColor="@color/rute_et_text" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rute_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_search_radioGroup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <com.thx.ty_publicbike.userdefined.CustomEditText
+            android:id="@+id/main_search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rute_et_bg"
+            android:drawableLeft="@drawable/search_img"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/et_delete"
+            android:gravity="center_vertical"
+            android:hint="@string/search_hint"
+            android:maxEms="10"
+            android:minEms="10"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="@color/rute_et_text"
+            android:textColorHint="@color/search_hint"
+            android:textSize="@dimen/common_text_size" >
+        </com.thx.ty_publicbike.userdefined.CustomEditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/main_search_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rute_relative_layout"
+        android:layout_marginLeft="@dimen/search_margin"
+        android:layout_marginRight="@dimen/search_margin"
+        android:layout_marginTop="@dimen/rute_margin_top"
+        android:background="@drawable/bt_submit_bg"
+        android:gravity="center"
+        android:text="@string/rute_search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_middle_size" />
+
+    <ListView
+        android:id="@+id/main_search_history_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_search_bt"
+        android:layout_margin="@dimen/search_margin"
+        android:layout_marginBottom="50dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/left_item_bg"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/main_search_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_search_bt"
+        android:layout_margin="@dimen/search_margin"
+        android:layout_marginBottom="50dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/left_item_bg"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

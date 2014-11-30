@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_text_big_size">21dp</dimen>
+    <dimen name="common_text_middle_size">18dp</dimen>
+    <dimen name="common_text_size">16dp</dimen>
+    <dimen name="common_text_small_size">12dp</dimen>
+    <!-- 引导 -->
+    <dimen name="progress_height">5dp</dimen>
+    <!-- 顶部栏 -->
+    <dimen name="top_iv_margin">10dp</dimen>
+    <!-- 登录 -->
+    <dimen name="loginCheckPadding">30dp</dimen>
+    <!-- 首页 -->
+    <dimen name="synchron_width">20dp</dimen>
+    <dimen name="synchron_height">20dp</dimen>
+    <dimen name="synchron_margin_right">12dp</dimen>
+    <dimen name="synchron_margin_top">2dp</dimen>
+    <!-- 退出 -->
+    <dimen name="opinion_linear_margin">10dp</dimen>
+     <dimen name="min_button_width">80dp</dimen>
+    <!-- 路线 -->
+    <dimen name="rute_margin_top">20dp</dimen>
+   <dimen name="rute_margin">15dp</dimen>
+    <dimen name="rute_iv_margin_left">10dp</dimen>
+    <dimen name="rute_common_padding">8dp</dimen>
+    <!-- 搜索 -->
+     <dimen name="search_margin">15dp</dimen>
+    <!--站点详情  -->
+ 	<dimen name="bikesite_detial_margin">15dp</dimen>
+ 	<dimen name="bikesite_detial_middle_margin">10dp</dimen>
+ 	<dimen name="bikesite_detial_down_margin">10dp</dimen>
+ 	<dimen name="bikesite_progress_height">5dp</dimen>
+ 	<dimen name="bikesite_text_small_size">16dp</dimen>
+ 	<!--意见反馈  -->
+ 	 <dimen name="spacing_margin">3dp</dimen>
+ 	 <dimen name="spinner_left_margin">5dp</dimen>
+ 	
+ 	<dimen name="close_margin">10dp</dimen>
+ 	<!--单选框  -->
+ 	<dimen name="radiobutton_padding">30dp</dimen>
+</resources>

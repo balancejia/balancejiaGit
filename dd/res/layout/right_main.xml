@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+               <com.thx.ty_publicbike.MapOverLay.MyMapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+ 
+                <LinearLayout
+                    android:id="@+id/main_above_map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <include layout="@layout/index_above_map" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.455"
+                        android:orientation="horizontal" >
+
+                        <include layout="@layout/top_main" />
+                    </RelativeLayout>
+                    <!-- 标题下面容器 -->
+
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.10"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bottom_main"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.445" >
+
+                        <include layout="@layout/bottom_main" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+</LinearLayout>

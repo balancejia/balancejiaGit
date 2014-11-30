@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 首页 -->
+     <!-- 导航按键 -->
+    <style name="RadioBtnTabbar">
+      <item name="android:background">@drawable/map_radio_bottombar</item>
+        <item name="android:textColor">#6c6c6c</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+     <style name="RadioBtnTabbar.BusinessContacts">
+        <item name="android:button">@drawable/map_radio_area</item>
+    </style>
+     <style name="RadioBtnTabbar.Message">
+        <item name="android:button">@drawable/map_radio_search</item>
+    </style>
+
+    <style name="RadioBtnTabbar.Contacts">
+        <item name="android:button">@drawable/map_radio_line</item>
+    </style>
+
+    <style name="RadioBtnTabbar.Setting">
+        <item name="android:button">@drawable/map_radio_more</item>
+    </style>
+     <!-- 引导界面进度条 -->
+    <style name="progressmini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini</item>
+    </style>
+     <!-- 下载更新 -->
+    <style name="Bike_uapdateItem">
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bike_update</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="ExitDialog" parent="@style/CustomDialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AboutusItem">
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/background_group_more_item</item>
+    </style>
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/none</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--MyCheckBox  -->
+     <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox</item>
+    </style>
+     <style name="MyRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/my_radiobutton</item>
+        <item name="android:paddingLeft">@dimen/radiobutton_padding</item>
+    </style>
+</resources>

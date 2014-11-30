@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray">
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="@dimen/bikesite_detial_margin"
+    	    android:layout_marginLeft="@dimen/bikesite_detial_margin"
+    	    android:layout_marginRight="@dimen/bikesite_detial_margin">
+    	     <TextView
+                android:id="@+id/bike_site_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_site_name"
+                android:textColor="@color/bikesite_name"
+                android:gravity="center"
+                android:textSize="@dimen/common_text_size" />
+
+    	   <TextView
+                android:id="@+id/landmark_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_site_name"
+                android:textColor="@color/bikesite_name"
+                android:gravity="center"
+                 android:layout_toRightOf="@id/tv_site_name"
+                 android:layout_alignParentRight="true"
+                android:textSize="@dimen/common_text_size" /> 
+    	    
+    	</RelativeLayout>
+       <RelativeLayout
+        android:id="@+id/middle_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bikesite_detial_margin"
+        android:layout_marginRight="@dimen/bikesite_detial_margin"
+        android:background="@drawable/bsd_middle_bg"
+        android:layout_marginBottom="@dimen/bikesite_detial_margin" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/bikesite_detial_middle_margin"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow" />
+
+                <TextView
+                    android:id="@+id/bike_site_can_borrow_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow_num"
+                    android:textColor="@color/bikesite_blue" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_sitedetail"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bikesite_progress_height"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:progressDrawable="@drawable/bikesite_detail_progress"
+                android:max="100" />
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bikesite_detial_middle_margin"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send" />
+
+                <TextView
+                    android:id="@+id/bike_site_can_send_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send_num"
+                    android:textColor="@color/bikesite_orange" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

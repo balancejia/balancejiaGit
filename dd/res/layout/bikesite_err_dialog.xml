@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="350dp">
+
+    <RelativeLayout
+        android:id="@+id/bikesite_err_tishi_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:padding="8dp"
+        android:background="@drawable/alter_top">
+        <ImageView
+            android:id="@+id/bikesite_err_tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tishi" />
+
+        <TextView
+            android:layout_toRightOf="@id/bikesite_err_tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="报错"
+            android:textColor="#77a66c"
+            android:textSize="22sp" />
+        
+        <RelativeLayout
+       	   android:id="@+id/bikesite_err_close"
+       	   android:layout_alignParentRight="true"
+       	   android:paddingTop="8dp"
+       	   android:paddingRight="15dp"
+       	   android:paddingLeft="15dp"
+	       android:layout_width="wrap_content"
+	       android:layout_height="30dp"
+	       android:onClick="doCancle">
+       	    
+       	    <ImageView
+	        android:layout_width="wrap_content" 
+	 		android:layout_height="wrap_content"
+		    android:src="@drawable/window_close" />
+       	</RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_below="@id/bikesite_err_tishi_layout"
+        android:background="@drawable/alter_bottom" >
+
+    <RelativeLayout
+        android:id="@+id/bikesite_err_type_layout"
+        android:layout_below="@id/bikesite_err_tishi_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:id="@+id/bikesite_err_position_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bikesite_detial_margin"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="类型"
+	            android:textColor="#77a66c"
+	            android:textSize="@dimen/common_text_middle_size" />
+             <Spinner
+                android:id="@+id/bikesite_err_type"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/spinner"
+                android:entries="@array/site_err"
+                android:paddingLeft="5dp"
+                android:text="@string/bikesite_err_type"
+                android:textColor="#666666"
+                android:textSize="@dimen/common_text_middle_size" />
+         </LinearLayout>
+         
+
+    </RelativeLayout>
+ 
+    <RelativeLayout
+        android:id="@+id/bikesite_err_position_layout"
+        android:layout_below="@id/bikesite_err_type_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bikesite_detial_margin"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="位置"
+            android:textColor="#77a66c"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/common_text_middle_size" />
+         
+       	<LinearLayout
+	        android:id="@+id/bikesite_err_point_layout"
+	        android:layout_marginLeft="@dimen/bikesite_detial_margin"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content">
+         	<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bsd_sitepoint" />
+         	
+         	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	                 	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+            <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_longitude" />
+                        <TextView
+            android:id="@+id/bikesite_err_Longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+                        </LinearLayout>
+             <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+       		<TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/txt_latitude"/>
+       		       		<TextView
+            android:id="@+id/bikesite_err_Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       		       		</LinearLayout>
+       		</LinearLayout>
+         </LinearLayout>
+         </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bikesite_err_desc_layout"
+        android:layout_below="@id/bikesite_err_position_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bikesite_detial_margin"
+            android:layout_marginRight="@dimen/bikesite_detial_margin"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+         <EditText
+            android:id="@+id/bikesite_err_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/txt_memo"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:textSize="@dimen/common_text_small_size" />
+         </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@id/bikesite_err_desc_layout"
+        android:layout_margin="15dp" >
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_submit_bg"
+            android:gravity="center"
+            android:text="@string/bt_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_middle_size"
+            android:onClick="doSubmit" />
+        
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_below="@id/bt_submit"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_submit_bg"
+            android:gravity="center"
+            android:text="@string/qu_xiao"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_middle_size"
+            android:onClick="doCancle" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

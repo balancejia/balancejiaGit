@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/main_search_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:text="@string/search_history_delete_bt"
+        android:textColor="@color/bikesite_name"
+        android:textSize="@dimen/common_text_middle_size" />
+<!-- 
+    <Button
+        android:id="@+id/search_history_delete_bt"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/search_margin"
+        android:focusable="false"
+        android:text="@string/search_history_delete_bt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size" 
+        android:background="@drawable/bt_cancle"/> -->
+
+</RelativeLayout>

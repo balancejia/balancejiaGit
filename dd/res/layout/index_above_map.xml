@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.455"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.10"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/map_position_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/weather_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/w_1" />
+
+                    <RelativeLayout
+                        android:id="@+id/hand_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/map_refresh" />
+                    </RelativeLayout>
+
+                    <!-- <TextView
+                        android:id="@+id/map_position_titile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/weather_img"
+                        android:text="当前天气："
+                        android:textColor="#6b9e29"
+                        android:textSize="16sp" />
+ -->
+                    <com.thx.ty_publicbike.userdefined.AlwaysMarqueeTextView
+                        android:id="@+id/map_position_titileName"
+                        android:layout_width="222dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/weather_img"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="正在获取实时天气情况..."
+                        android:textColor="#6b9e29"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_open_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/top_limit_bar"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/bar_limit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="1500米"
+                        android:textColor="#767676" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/map_area_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/top_limit_bg"
+                        android:paddingBottom="18dp"
+                        android:paddingTop="4dp"
+                        android:visibility="gone" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true" >
+
+                            <RelativeLayout
+                                android:id="@+id/map_area_back_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="25dp"
+                                    android:paddingRight="25dp" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bikesite_list_up" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bikesite_list_up" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/map_area_500"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/map_area_500" />
+
+                            <ImageView
+                                android:id="@+id/map_area_1000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/map_area_500"
+                                android:src="@drawable/map_area_1000" />
+
+                            <ImageView
+                                android:id="@+id/map_area_1500"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/map_area_1000"
+                                android:src="@drawable/map_area_1500" />
+
+                            <ImageView
+                                android:id="@+id/map_area_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/map_area_1500"
+                                android:src="@drawable/map_area_all" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <RelativeLayout
+                            android:id="@+id/map_area_cur_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="72dp"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="16dp" >
+
+                            <ImageView
+                                android:id="@+id/map_area_cur"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/map_area_1500" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/my_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/map_location_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/zoom_action"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="16dp" >
+
+                        <ImageView
+                            android:id="@+id/map_zoom_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/map_zoom_up" />
+
+                        <ImageView
+                            android:id="@+id/map_zoom_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/map_zoom_up"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/map_zoom_down" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.445"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/map_my_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/map_my_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="2dp"
+                    android:src="@drawable/map_my_icon_red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_myalert_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/map_my_icon_layout"
+                android:layout_centerInParent="true"
+                android:background="@drawable/map_mypostion_background"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/map_bubbleTitle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:text="@string/map_position_searchname"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/map_bubbleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/map_bubbleTitle"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/map_mypostion_line" />
+
+                <ImageView
+                    android:id="@+id/map_bubbleSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/map_bubbleLine"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/map_mypostion_search" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

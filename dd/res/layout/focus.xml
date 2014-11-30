@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray">
+    <ListView 
+        android:id="@+id/focus_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+		android:fastScrollEnabled="true"
+        android:listSelector="@drawable/left_item_bg"
+        android:divider="#d6d6d6"   
+        android:dividerHeight="2px" >
+    </ListView>
+</LinearLayout>

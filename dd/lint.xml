@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="Recycle">
+        <ignore path="src\com\thx\ty_publicbike\userdefined\CenterRadioButton.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src\com\thx\ty_publicbike\IndexMainActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src\com\thx\ty_publicbike\util\Util.java" />
+    </issue>
+    <issue id="ValidFragment" severity="ignore">
+        <ignore path="src\com\example\taiyuan_pbike\fragment\IndexFragment.java" />
+        <ignore path="src\com\example\taiyuan_pbike\fragment\SearchFragment.java" />
+        <ignore path="src\com\thx\ty_publicbike\fragment\BikeSiteListFragment.java" />
+        <ignore path="src\com\thx\ty_publicbike\fragment\IndexFragment.java" />
+        <ignore path="src\com\thx\ty_publicbike\fragment\RuteFragment.java" />
+        <ignore path="src\com\thx\ty_publicbike\fragment\SearchFragment.java" />
+    </issue>
+</lint>

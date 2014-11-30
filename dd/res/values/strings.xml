@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">龙城单车</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <!-- 顶部栏 -->
+     <string name="top_tv_main">龙城单车</string>
+     <!-- 登录 -->
+      <string name="login_jzmm">记住密码</string>
+    <string name="login_zddl">自动登录</string>
+     <!-- 首页 -->
+       <string name="map_radio_area">附近</string>
+    <string name="map_radio_search">搜索</string>
+    <string name="map_radio_line">导航</string>
+    <string name="map_radio_focus">关注</string>
+     <string name="map_radio_more">更多</string>
+     <!-- 路线 -->
+     <string name="rute_start">起点</string>
+      <string name="rute_end">终点</string>
+      <string name="rute_search">搜索</string>
+      <string name="map_rute">地图线路</string>
+      <string name="list_rute">列表线路</string>
+      <!-- 搜索 -->
+     <string name="search_hint">请输入站点名称或编号</string>
+     <string name="search_by_bikesite">站点名称、编号</string>
+     <string name="search_by_landmark">附近标志物</string>
+	<!-- 站点详情 -->
+	<string name="tv_site_name">科技街创意街口</string>
+	<string name="tv_site_distance">300m</string>
+	<string name="tv_sitecode">站点编号：</string>
+	<string name="tv_site_code">123321</string>
+	<string name="tv_site_can_borrow">可借车辆：</string>
+	<string name="tv_site_can_borrow_num">7</string>
+	<string name="tv_site_can_send">可还车位：</string>
+	<string name="tv_site_can_send_num">21</string>
+	<string name="tv_site_start">从这里出发</string>
+	<string name="tv_site_end">到这儿去</string>
+	<string name="tv_site_nearby">附近站点</string>
+	<string name="bt_share">分享</string>
+	<string name="bt_collect">关注</string>
+	<string name="bt_del_focus">取消关注</string>
+	<string name="bt_submit">提交</string>
+	
+	<string name="map_position_titlename">当前位置：</string>
+	<string name="map_position_searchname">拖动地图可以调整所在位置</string>
+	<string name="map_pop_stationId_Name">站点编号：%1$s</string>
+	<string name="pop_view_usebike">可借车辆：</string>
+	<string name="pop_view_usepos">可还车位：</string>
+	<string name="no_net">访问网络请求失败</string>
+    <string name="no_data">该站点可能已暂时关闭</string>
+   
+    <string name="have_update">版本更新</string>
+    <string name="have_new_version">发现新的版本%s</string>
+    <string name="que_ren">确认</string>
+    <string name="qu_xiao">取消</string>
+    
+    <string name="search_history_delete_bt">删除</string>
+    <string name="bikesite_err_type">站点位置</string>
+    <string name="txt_memo">备注信息描述</string>
+    <string name="txt_longitude">经度：</string>
+    <string name="txt_latitude">纬度：</string>
+    <!-- 意见反馈 -->
+      <string name="feedback">反馈类型:</string>
+    <string name="need">您的需求</string>
+    <string name="opinion">建议或意见:</string>
+    <string name="contact">联系方式(选填):</string>
+    <string name="name_telephone_email">您的姓名、手机号、邮箱等</string>
+    <string name="submit">提交</string>
+    <string name="problem_opinion">您遇到的问题或者建议(最多2000字)</string>
+    <!--数据更新  -->
+    <string name="last_update_time">最后更新时间：2014-03-15</string>
+    <string name="update_count">需要更新的数据：有0条</string>
+    <string name="update_say">操作说明：点击同步获得最新数据</string>
+     <!--版本更新  -->
+    <string name="now_version">当前版本：2.0</string>
+    <string name="new_version">最新版本：2.0</string>
+     <string name="version_content">暂无</string>
+    <string name="version_say">操作说明：点击更新升级最新版本</string>
+    <!-- 分享-->
+       <string name="share_text">龙城单车客户端是由太原公交总公司和山西移动太原分公司联手打造的便民服务工具。你可以通过以下平台分享相关内容给你的好友，邀请他们共同使用。
+</string>
+    <string name="shareContent">龙城单车真心不错哦！最近一直在用它，站点、车辆信息一查便知，借车还车不再是难题，你也体验一下吧>>http://wxcs.cn/SQZRRRr</string>
+    <!-- 关于我们 -->
+     <string name="aboutus_text">龙城单车客户端是由太原公交总公司和山西移动太原分公司联手打造的便民服务工具。通过手机客户端可以实时直观地了解每个服务点车辆存储情况，市民可以更快键、方便、准确的找到目标站点，为市民租赁和归还自行车节约时间。
+</string>
+    <string name="aboutus_text1">服务热线</string>
+    <string name="aboutus_text2">公共自行车咨询电话:0351-7772345</string>
+    <string name="aboutus_text21">公交IC卡咨询电话:0351-7232632</string>
+    <string name="aboutus_text22">热线服务:12580</string>
+    <string name="aboutus_text231">公共自行车官方网址:</string>
+    <string name="aboutus_text232">www.ty7772345.com</string>
+    <string name="aboutus_text241">无线城市官方网址:</string>
+    <string name="aboutus_text242">wap.uwxsx.com</string>
+</resources>

@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bikesite_detail_bg" >
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/top_back_caution" />
+
+    <RelativeLayout
+        android:id="@+id/up_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_margin="@dimen/bikesite_detial_margin"
+        android:background="@drawable/bsd_up_bg"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/up_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bikesite_detial_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_site_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="10"
+                android:text="@string/tv_site_name"
+                android:textColor="@color/bikesite_name"
+                android:textSize="18sp" />
+
+            <!--
+                 <ImageView
+                android:id="@+id/iv_site_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bikesite_detial_margin"
+                android:onClick="onMapPoint"
+                android:background="@drawable/bsd_sitepoint" />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/down_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/up_linear_layout"
+            android:layout_marginLeft="@dimen/bikesite_detial_margin"
+            android:layout_marginTop="@dimen/bikesite_detial_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_sitecode"
+                android:textColor="@color/bikesite_code"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_site_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_site_code"
+                android:textColor="@color/bikesite_code"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/down_linear_layout"
+            android:layout_alignParentRight="true" 
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/xiangqing_line" />
+
+            <ImageView
+                android:id="@+id/iv_site_point"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:onClick="onMapPoint"
+                android:src="@drawable/xiangqing" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/up_relative_layout"
+        android:layout_marginLeft="@dimen/bikesite_detial_margin"
+        android:layout_marginRight="@dimen/bikesite_detial_margin"
+        android:background="@drawable/bsd_middle_bg"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow"
+                    android:textColor="@color/bikesite_code"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_site_can_borrow_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow_num"
+                    android:textColor="@color/bikesite_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_sitedetail"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bikesite_progress_height"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:max="100"
+                android:progressDrawable="@drawable/bikesite_detail_progress" />
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bikesite_detial_middle_margin"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send"
+                    android:textColor="@color/bikesite_code"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_site_can_send_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send_num"
+                    android:textColor="@color/bikesite_orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/down_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middle_relative_layout"
+        android:layout_margin="@dimen/bikesite_detial_margin"
+        android:background="@drawable/bsd_down_bg"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bikesite_detial_margin" >
+
+            <LinearLayout
+                android:id="@+id/iv_site_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bsd_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bikesite_detial_down_margin"
+                    android:text="@string/tv_site_end"
+                    android:textColor="@color/bikesite_text"
+                    android:textSize="@dimen/bikesite_text_small_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bsd_space" />
+
+            <LinearLayout
+                android:id="@+id/iv_site_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bsd_start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bikesite_detial_down_margin"
+                    android:text="@string/tv_site_start"
+                    android:textColor="@color/bikesite_text"
+                    android:textSize="@dimen/bikesite_text_small_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bsd_space" />
+
+            <LinearLayout
+                android:id="@+id/iv_site_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bsd_nearby" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bikesite_detial_down_margin"
+                    android:text="@string/tv_site_nearby"
+                    android:textColor="@color/bikesite_text"
+                    android:textSize="@dimen/bikesite_text_small_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/down_relative_layout"
+        android:layout_marginLeft="@dimen/bikesite_detial_margin"
+        android:layout_marginRight="@dimen/bikesite_detial_margin" >
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/down_relative_layout"
+            android:background="@drawable/zhandianxianqing_button"
+            android:gravity="center"
+            android:onClick="doShare"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:shadowColor="#239707"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/bt_share"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_share"
+            android:layout_marginTop="@dimen/bikesite_detial_margin"
+            android:background="@drawable/zhandianxianqing_button"
+            android:gravity="center"
+            android:onClick="doFocus"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:shadowColor="#239707"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/bt_collect"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

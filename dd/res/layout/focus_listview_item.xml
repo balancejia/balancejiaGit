@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fdfdfc">
+    <LinearLayout 
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    	<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="@dimen/bikesite_detial_margin"
+    	    android:layout_marginLeft="@dimen/bikesite_detial_margin"
+    	    android:layout_marginRight="@dimen/bikesite_detial_margin">
+    	     <TextView
+                android:id="@+id/bike_site_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_site_name"
+                android:textColor="@color/bikesite_name"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="@dimen/common_text_size" 
+                android:maxEms="8"/>
+    	</RelativeLayout>
+       <RelativeLayout
+        android:id="@+id/middle_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bsd_middle_bg"
+        android:layout_marginBottom="@dimen/bikesite_detial_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow"
+                    android:textColor="@color/bottom_text_bg_hui" />
+
+                <TextView
+                    android:id="@+id/bike_site_can_borrow_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_borrow_num"
+                    android:textColor="@color/bikesite_blue" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_sitedetail"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bikesite_progress_height"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/bikesite_detail_progress"
+                android:max="100" />
+
+            <LinearLayout
+                android:id="@+id/ll_site_can_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send"
+                    android:textColor="@color/bottom_text_bg_hui"  />
+
+                <TextView
+                    android:id="@+id/bike_site_can_send_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_site_can_send_num"
+                    android:textColor="@color/bikesite_orange" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+  </LinearLayout>
+  <LinearLayout 
+      android:id="@+id/del_focus_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_gravity="center">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/focus_qx"
+                android:layout_gravity="center"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消关注"
+            android:textColor="@color/bottom_text_bg_hui"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+        </LinearLayout>
+</LinearLayout>

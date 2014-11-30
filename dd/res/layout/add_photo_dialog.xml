@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="上传头像"
+            android:textColor="#77a66c"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_big_size" />
+        <RelativeLayout
+       	   android:id="@+id/bikesite_err_close"
+       	   android:paddingTop="8dp"
+       	   android:paddingRight="15dp"
+       	   android:paddingLeft="15dp"
+	       android:layout_width="wrap_content"
+	       android:layout_height="30dp"
+	       android:layout_alignParentRight="true"
+	       android:layout_centerVertical="true"
+	       android:onClick="doCancle">
+       	    
+       	    <ImageView
+	        android:layout_width="wrap_content" 
+	 		android:layout_height="wrap_content"
+		    android:src="@drawable/window_close" />
+       	</RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_from_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_cancle"
+        android:text="从手机相册选择" />
+
+    <Button
+        android:id="@+id/bt_cramera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_cancle"
+        android:layout_marginBottom="20dp"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_cancle"
+        android:text="取消" 
+        android:onClick="doCancle"
+        android:visibility="gone"/>
+
+</LinearLayout>

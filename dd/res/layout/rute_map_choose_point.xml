@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.thx.ty_publicbike.MapOverLay.MyMapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/top_iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_iv_margin"
+                android:background="@drawable/top_back"
+                android:onClick="doBack" />
+
+            <TextView
+                android:id="@+id/top_tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/top_tv_main"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_big_size" />
+
+            <TextView
+                android:id="@+id/top_iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/top_iv_margin"
+                android:text="@string/que_ren"
+                android:textColor="#f0ffdc"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/map_my_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/map_myicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="32dp"
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/map_my_icon_red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_myalert_icon_layout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/map_my_icon_layout"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/map_mypostion_background" >
+
+                <TextView
+                    android:id="@+id/map_bubbleTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:text="@string/map_position_searchname"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
