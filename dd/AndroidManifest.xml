@@ -9,7 +9,7 @@
         android:targetSdkVersion="8" />
 
     <application
-        android:name="com.thx.ty_publicbike.BikeApplication"
+        android:name="com.bb.dd.BikeApplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
@@ -19,12 +19,12 @@
             android:value="HcN733O35aF8aRlWl2Tr4hx4" />
 
         <activity
-            android:name="com.thx.ty_publicbike.ViewPagerActivity"
+            android:name="com.bb.dd.ViewPagerActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.GuideActivity"
+            android:name="com.bb.dd.GuideActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -34,103 +34,103 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.IndexMainActivity"
+            android:name="com.bb.dd.IndexMainActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.RuteSearchActivity"
+            android:name="com.bb.dd.RuteSearchActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.RuteMapActivity"
+            android:name="com.bb.dd.RuteMapActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.RuteListActivity"
+            android:name="com.bb.dd.RuteListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.BikeSiteDetialActivity"
+            android:name="com.bb.dd.BikeSiteDetialActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.LineActivity"
+            android:name="com.bb.dd.LineActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.LoginActivity"
+            android:name="com.bb.dd.LoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.RegistActivity"
+            android:name="com.bb.dd.RegistActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.ChangePasswordActivity"
+            android:name="com.bb.dd.ChangePasswordActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.ResetPasswordActivity"
+            android:name="com.bb.dd.ResetPasswordActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.SearchResultActivity"
+            android:name="com.bb.dd.SearchResultActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.ShowDialogActivity"
+            android:name="com.bb.dd.ShowDialogActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ExitDialog" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.BikeSiteErrActivity"
+            android:name="com.bb.dd.BikeSiteErrActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ExitDialog" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.MapPointActivity"
+            android:name="com.bb.dd.MapPointActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.MapPointSelActivity"
+            android:name="com.bb.dd.MapPointSelActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.AddPhotoActivity"
+            android:name="com.bb.dd.AddPhotoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ExitDialog" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.EditUserMsgActivity"
+            android:name="com.bb.dd.EditUserMsgActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.UpdateVersionActivity"
+            android:name="com.bb.dd.UpdateVersionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyDialog" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.RuteMapChoosePtActivity"
+            android:name="com.bb.dd.RuteMapChoosePtActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.thx.ty_publicbike.ShareActivity"
+            android:name="com.bb.dd.ShareActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ExitDialog" >
         </activity>
