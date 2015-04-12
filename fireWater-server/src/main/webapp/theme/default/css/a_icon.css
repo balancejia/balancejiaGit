@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS 图标 */
+
+a.icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -5000px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.icon-detail {
+	background: url(../images/icon.gif);
+}
+
+.icon-edit {
+	background: url(../images/icon.gif) -16px 0px;
+}
+.icon-delete {
+	background: url(../images/icon.gif) -32px 0px;
+}
+.icon-resetpwd{
+	background: url(../images/resetpwd.gif);
+}
+.icon-up{
+	background: url(../images/up.gif);
+}
+.icon-down{
+	background: url(../images/down.gif);
+}
+.icon-auth{
+	background: url(../images/auth.gif);
+}
+.icon-selectuser{
+	background: url(../images/selectuser.gif);
+}
+.icon-release{
+	background: url(../images/release.gif);
+}
+.icon-update{
+	background: url(../images/update.gif);
+}

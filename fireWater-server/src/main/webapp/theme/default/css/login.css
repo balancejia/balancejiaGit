@@ -1,0 +1,98 @@
+/* CSS Document */
+body {
+        margin:0;
+        padding:0;
+		background:url(../images/bg.jpg)
+}
+
+
+.login{
+	background:url(../images/loginbg.png);
+	width:920px;
+	height:362px;
+	margin:100px auto;
+	padding:auto}
+.login form{
+	font-size:14px;
+	color:#666;
+	margin-left: 38px; 
+	width: 350px;
+    margin-top: 15px;
+    }
+.login .form-group {
+	width: 100%;
+	height:50px;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background:#fff;
+	font-weight:normal;
+}
+
+.login .form-group label.sr-only{
+	width: 80px;
+	text-align: right;
+	display:inline-block;
+	padding:5px 10px;
+	margin-top:13px;
+	font-weight:700;
+}
+ .login .form-group input{
+	display:inline-block;
+	padding:5px 10px;
+	background:#fff;
+	font-family:"微软雅黑",microsoft yahei;
+	width: 140px;
+	margin-top:13px;margin-right:10px} 
+.login input[type="text"]{
+	border:0;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+	padding:2px 4px;
+	background:#fff;
+	}
+.login .form-group input[name="captcha"]{
+	margin-right:0px;
+	width: 100px;
+}
+.login .form-group img[name="captcha"]{
+	width: 60px; 
+	height: 20px;
+	margin-right:10px;
+}
+.login .button_group{
+	width: 100%;
+	height:56px;
+	border:none;
+	border-top:1px solid #ccc;
+	background:none;
+	font-weight:normal;
+}
+.login input[type="password"]{
+	border:0;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+	padding:2px 4px;
+	background:#fff;
+	}	
+a.btn-default:link,a.btn-default:visited,a.btn-default:active{
+	width:350px;
+	margin-top:15px;
+	
+	background:#305376;
+	color:#d4d4d2;
+	font-family:"微软雅黑",microsoft yahei;	
+	font-size:14px;	
+	display:block;
+	height:36px;
+	text-align:center;
+	text-decoration:none;
+	line-height:36px;
+	}
+a.btn-default:hover{
+	background:#336699;
+	color:#fff;
+	}

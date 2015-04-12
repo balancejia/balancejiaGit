@@ -1,0 +1,109 @@
+html, body
+{
+	height: 100%;
+	overflow: hidden;
+	min-width: 800px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+div,p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+.top{
+	height: 80px;
+	background: url(../images/topbg.jpg) left no-repeat;
+}
+.top h1{margin:0;
+		padding:0;
+		line-height:80px;
+		font-size:30px;
+		margin-left:220px;
+		color:#fff;
+		font-family:"΢���ź�",microsoft yahei;
+		font-weight:normal;
+		float:left;
+		width:300px}
+.top span{
+	width:80px;
+	height:40px;
+	display:block;
+	padding-top:50px;
+	text-align:center;
+}
+.top a{
+	font-family:"΢���ź�",microsoft yahei;
+	font-size:14px;color:#CCC;text-decoration:none}
+.top a:hover{
+	color:#fff;text-decoration:underline}
+.top .xlzy{
+	background:url(../images/xlzy.png) center 12px no-repeat;float:right;}
+.top .setting{
+	background: url(../images/settings.png) center 12px no-repeat;float:right;}
+.top .back{
+	background: url(../images/back.png) center 12px no-repeat;float:right;}
+.top .info{margin:0;
+		padding:0;
+		line-height:30px;
+		font-size:12px;
+		margin-left:10px;
+		color:#fff;
+		font-family:"΢���ź�",microsoft yahei;
+		font-weight:normal;
+		float:left;
+		width:300px}
+.center{
+	height: auto;
+}
+.center .left{
+	width: 200px;
+	float: left;
+	background: #f4f4f4;
+}
+.center .content{
+	float: left;
+	width: auto;
+}
+ #tabs{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+#tabs .move
+{
+	width: 14px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	display: none;
+	z-index: 1;
+	cursor: pointer;
+}
+#tabs .prev
+{
+	left: 0;
+	background: url('../images/left.png') #fff no-repeat scroll center center;
+	top:5px;
+
+
+}
+#tabs .next
+{
+	right:0;
+	background: url('../images/right.png') #fff no-repeat scroll center center;
+	top:5px;
+}
+.footer{
+	height: 32px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 32px;
+	font-size:12px;
+	background: #376596;
+	clear: both;
+	color:#b8c1cc;
+}

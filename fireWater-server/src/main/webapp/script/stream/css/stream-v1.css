@@ -1,0 +1,408 @@
+@charset "utf-8";
+.stream-font {
+	color: #000;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.stream-main-upload-box-mini ul,ol {
+	list-style: none;
+}
+
+.stream-main-upload-box-mini ul,ol,li,img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.stream-main-upload-box ul,ol {
+	list-style: none;
+}
+
+.stream-main-upload-box ul,ol,li,img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.stream-browse-files {
+	overflow: hidden;
+	position: relative;
+}
+
+.stream-browse-drag-files-area {
+	border: 2px dashed #555;
+	padding: 10px 0;
+	border-radius: 7px;
+	text-align: center;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.stream-disable-browser {
+	color: #909090;
+}
+
+/*zili  .stream-files-scroll {
+	height: 450px;
+	overflow: auto;
+}*/
+
+.stream-main-upload-box .stream-cell-file {
+	cursor: default;
+	position: relative;
+	zoom: 1;
+	padding: 10px 20px 10px 35px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-color: #ccc;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-cell-infos:before,.stream-main-upload-box .stream-cell-file .stream-cell-infos:after {
+	clear: both;
+	content: ".";
+	font-size: 0;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.stream-main-upload-box .stream-file-name {
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left:10px;
+	text-align: left;
+	float: left;
+	width:84%;
+}
+
+.stream-main-upload-box. stream-cell-file .stream-process {
+	zoom: 1;
+	overflow: hidden;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-cancel {
+	margin-right: 5px;
+	float: right;
+	margin-top: 18px;
+	display:block;
+	min-width:16px;
+	text-indent:-5000px;
+	background-image: url(img/delete.png);
+    background-repeat: no-repeat;
+	
+}
+.stream-main-upload-box .stream-cell-file .stream-file-show { /* 显示文件的样式zili */
+	margin-left: 5px;
+	float: left;
+}
+a {
+	color: #158144;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar {
+	width: 300px;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar,.stream-cell-file .stream-percent {
+	float: left;
+	margin-right: 10px;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar {
+	width:135px;
+	margin-left: 8px;
+margin-top: 6px;
+}
+
+.stream-main-upload-box .stream-process-bar {
+	position: relative;
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 55px;
+	height: 10px;
+	overflow: hidden;
+}
+
+.stream-main-upload-box .stream-process-bar span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 8px;
+	border: 1px solid #fff;
+	font-size: 0;
+	background-position: 0 -149px;
+	background-image: url(./img/bgx.png);
+	background-repeat: repeat-x;
+	background-color: #A5DD3D;
+}
+
+.stream-main-upload-box .stream-process-bar,.stream-process-bar span {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.stream-main-upload-box  .stream-cell-file .stream-cell-infos {
+	zoom: 1;
+	color: #7D7D7D;
+	margin-top:-22px;
+	margin-right:113px;
+}
+
+.stream-cell-file .stream-cell-infos .stream-cell-info {
+	/*width: 170px;*/
+	float:right;
+}
+
+.stream-cell-file .stream-cell-infos span {
+	float: left;
+	margin-right: 8px;
+}
+
+.stream-total-tips .stream-process-bar {
+	width: 200px;
+	margin-top: -1px;
+}
+
+.stream-process-bar, .stream-uploading-ico {
+	-moz-box-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+}
+
+.stream-total-tips {
+	border: 1px solid #ccc;
+	border-width: 1px 0 0;
+	padding: 3px 5px 3px 25px;
+	position: relative;
+	zoom: 1;
+	background-color: #FFFFE1;
+	color: #565656;
+}
+
+.stream-main-upload-box {
+	width: 610px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #50A05B;
+	clear: both;
+	overflow: auto;
+	text-align: center;/*zili  */
+}
+
+.stream-uploading-ico {
+	left: 11px;
+	position: absolute;
+	top: 11px;
+	background: url("./img/upload.gif") no-repeat scroll 0 1px transparent !important;
+	height: 18px;
+	width: 18px;
+}
+
+.stream-disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: .65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.stream-table{
+	border: 1px solid #699;
+	background: #fff;
+	margin-top: 10px;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+    border-collapse: collapse
+}
+.trEven {
+	background: #f8f8f8
+}
+.stream-sure {
+	text-align: left;/*zili  */
+}
+
+.left-img{
+	float:left;
+}
+/****MINI**/
+ .stream-main-upload-box-mini{
+	background-color: #FFFFFF;
+	text-align: left;/*zili  */
+}
+.stream-main-upload-box-mini .stream-file-name {
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	float: left;
+	width:84%;
+}
+.stream-main-upload-box-mini .stream-cancel{
+  display:block;
+  float: left;
+  background-image: url(img/delete.png);
+  background-repeat: no-repeat;
+  text-indent:-5000px;	
+  margin-left: 10px;
+  width:16px;
+  
+}
+
+.stream-main-upload-box-mini .stream-cell-file {
+	cursor: default;
+	position: relative;
+	zoom: 1;
+	padding: 5px 8px 0px 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-color: #ccc;
+}
+.stream-main-upload-box .stream-cell-file .stream-process {
+	zoom: 1;
+	overflow: hidden;
+}
+.stream-main-upload-box .stream-cell-file .stream-file-show { /* 显示文件的样式zili */
+	margin-left: 5px;
+	
+	display:block;
+	min-width:16px;
+	text-indent:-5000px;
+}
+a {
+	color: #158144;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar {
+	width: 300px;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar,.stream-cell-file .stream-percent {
+	float: left;
+	margin-right: 10px;
+}
+
+.stream-main-upload-box .stream-cell-file .stream-process-bar {
+	width:135px;
+	margin-left: 8px;
+	margin-top: 6px;
+}
+.file-name-mini{
+	float:left;margin-left:10px;
+}
+
+
+.stream-cell-file-show{
+	cursor: default;
+	position: relative;
+	zoom: 1;
+	padding: 10px 0px 0px 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-color: #ccc;
+	
+margin: 0 auto;
+overflow:hidden;
+}
+.file-name-show{
+	float:left;
+	margin-left:5px;
+}
+.stream-cancel-show{
+display:block;float: left;
+margin-left: 10px;	
+background-image: url(img/delete.png);
+background-repeat: no-repeat;
+display:block;
+min-width:16px;
+text-indent:-5000px;	
+}
+
+.stream-main-upload-box-mini .stream-cell-file .stream-cell-infos:before,.stream-main-upload-box-mini .stream-cell-file .stream-cell-infos:after {
+	clear: both;
+	content: ".";
+	font-size: 0;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.stream-main-upload-box-mini .stream-cell-file .stream-process:before,.stream-main-upload-box-mini .stream-cell-file .stream-process:after {
+	clear: both;
+	content: ".";
+	font-size: 0;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.stream-main-upload-box-mini .stream-file-name strong{
+	float:left;
+}
+.stream-main-upload-box-mini .stream-process-bar {
+	position: relative;
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 100px;
+	height: 10px;
+	overflow: hidden;
+	float:left;
+	margin-top:3px;
+}
+
+.stream-main-upload-box-mini .stream-process-bar span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 8px;
+	border: 1px solid #fff;
+	font-size: 0;
+	background-position: 0 -149px;
+	background-image: url(./img/bgx.png);
+	background-repeat: repeat-x;
+	background-color: #A5DD3D;
+}
+
+.stream-main-upload-box-mini .stream-process-bar,.stream-process-bar span {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.stream-main-upload-box-mini .stream-cell-file .stream-process-bar,.stream-cell-file .stream-percent {
+	float: left;
+	margin-right: 10px;
+}
+.stream-main-upload-box-mini  .stream-cell-file .stream-cell-infos {
+	zoom: 1;
+	color: #7D7D7D;
+	margin-top:-20px;
+	margin-left:200px;
+	position:absolute;
+	
+}
+.stream-browse-files-mini {
+	text-align: left;/* zili */
+}
+.stream-browse-files-normal {
+	text-align: center;/* zili */
+}
+a.browseButton:link,a.browseButton:active,a.browseButton:visited {
+	height: 25px;
+	padding: 0px 13px;
+	border: 0px;
+	color: #5978a4;
+	margin: 5px 0px 5px 6px;
+	background: #f9f9f9;
+	font-size: 12px;
+	font-family: '宋体';
+	display: inline-block;
+	line-height: 25px;
+	border:1px solid #ccc
+}

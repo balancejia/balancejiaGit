@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modules>
+	<module>
+		<name>site</name>
+		<interface>com.thx.fireWater.interfaces.jsonrpc.SiteManager
+		</interface>
+		<class>com.thx.fireWater.app.impl.SiteManagerImpl</class>
+	</module>
+</modules>

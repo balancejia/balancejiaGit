@@ -1,0 +1,398 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #333
+}
+
+.searchPanel {
+	font-size: 12px;
+	background: #f4f4f4;
+	min-height:38px;
+}
+.searchPanel table {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 0 8px;
+	font-size: 12px;
+	
+}
+.searchPanel input {
+	width: 100px;
+	margin-right: 5px;
+	
+}
+.searchPanel select {
+	width: 100px;
+	margin-right: 5px;
+	height: 24px
+}
+
+.searchPanel input[type='button'] {
+	background: #31567c;
+	height: 25px;
+	width: 65px;
+	border: none;
+	color: #fff;
+	text-align: center;
+}
+
+.searchPanel td {
+	height: 38px
+}
+.searchPanel .search{
+	float:right;
+}
+.contentPanel {
+	margin-top: 10px;
+	min-height:300px;
+}
+
+.contentPanel tr {
+	height: 38px
+}
+
+.contentPanel td {
+	text-align: center;
+}
+
+.contentPanel table {
+	width: 100%;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	font-family: '宋体';
+	border-top: 1px solid #31567c;
+	color: #666;
+	border-spacing:0px;
+}
+
+.contentPanel th {
+	background: #f4f4f4;
+	height: 38px;
+	font-weight: normal;
+}
+
+.footPanel {
+	background: #efefef;
+	height: 37px;
+	clear: both;
+	font-size: 12px;
+}
+
+.handlePanel input[type='button'] {
+	height: 25px;
+	padding: 0px 13px;
+	border: 0px;
+	color: #fff;
+	margin-top: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #5978a4;
+}
+
+.pagePanel {
+	float: right;
+	margin-right: 10px;
+	padding-top: 6px
+}
+
+.pagePanel .themeText a {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 0px 10px;
+	color: #999;
+	float: left;
+	margin-right: 10px;
+	height: 23px;
+	line-height: 23px;
+}
+
+.pagePanel .themeText a:hover {
+	background: #fff;
+	color: #d24e35;
+}
+
+.pagePanel .themeText input {
+	width: 25px;
+	height: 18px;
+	margin-right: 10px;
+	float: left;
+	text-align: center
+}
+.pagePanel .themeText font {
+	line-height: 23px;
+}
+.pagePanel .themeText label {
+	float: left;
+}
+.pagePanel .themeNumber a{
+	display:inline-block;
+	float:left;
+	margin:5px;
+	padding:2px 5px;
+	background:#f5f5f5;
+	font-size:12px;
+	color:#333;
+	border-radius:3px;
+	border:1px solid #999;
+}
+.pagePanel .themeNumber label{
+	display:block;
+	float:left;
+	margin-top:5px;
+	font-size:12px;
+	margin-right:5px;
+}
+.pagePanel .themeNumber strong{
+	display:block;
+	float:left;
+	margin:5px;
+	padding:2px 5px;
+	background:#325a98;
+	font-size:12px;
+	color:#fff;
+	border-radius:3px;
+	border:1px solid #325a98;
+	font-weight:bold;
+}
+	
+a.on {
+	background: #fff;
+	color: #d24e35;
+}
+
+.trEven {
+	background: #f8f8f8
+}
+
+.handlePanel {
+	float: left;
+}
+
+.content_jzdz {
+	text-align: center
+}
+
+
+
+
+a.button:link,a.button:active,a.button:visited {
+	height: 25px;
+	padding: 0px 13px;
+	border: 0px;
+	color: #ffffff;
+	margin: 5px 0px 5px 6px;
+	background: #5978a4;
+	font-size: 12px;
+	font-family: '宋体';
+	display: inline-block;
+	line-height: 25px
+}
+a.button:hover {
+	height: 25px;
+	padding: 0px 13px;
+	border: 0px;
+	color: #ffffff;
+	margin: 5px 0px 5px 6px;
+	background: #31567c;
+	font-size: 12px;
+	font-family: '宋体';
+	display: inline-block;
+	line-height: 25px
+}
+input.button{
+	height: 25px;
+	padding: 0px 13px;
+	border: 0px;
+	color: #ffffff;
+	margin: 5px 0px 5px 6px;
+	background: #31567c;
+	font-size: 12px;
+	font-family: '宋体';
+	display: inline-block;
+	line-height: 25px
+}
+
+a.add:link,a.add:visited,a.add:hover,a.add:active {
+	background-image: url(../images/add.gif);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	padding-left: 20px
+}
+
+a.confirm:link,a.confirm:visited,a.confirm:hover,a.confirm:active {
+	padding: 5px 15px;
+	font-size: 14px;
+	margin-top: 20px
+}
+
+.button_contain {
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+}
+
+a.del_w:link,a.del_w:visited,a.del_w:hover,a.del_w:active {
+	background-image: url(../images/delete-w.gif);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	padding-left: 25px
+}
+
+
+.center {
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center
+}
+
+
+.detailPanel table {
+	border: 1px solid #699;
+	background: #fff;
+	margin-top: 10px;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+.detailPanel tr { 
+	min-height:25px;
+}
+.detailPanel td {
+	padding: 2px 10px;
+	border: 1px solid #999;
+	text-align: left
+}
+
+.detailPanel th {
+	padding: 2px 10px;
+	background: #f5f5f5;
+	text-align: right;
+	border: 1px solid #999;
+	color:#369;
+}
+.detailPanel	textarea {
+	width: 96%;
+	margin-left: 0;
+}
+
+.editPanel table {
+	border: 1px solid #699;
+	background: #fff;
+	margin-top: 10px;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+    border-collapse: collapse
+}
+
+.editPanel th {
+	font-weight: normal;
+	font-family: '宋体';
+	font-size: 12px;
+	color: #369;
+	padding: 2px 10px;
+	background: #f5f5f5;
+	text-align: right;
+	border: 1px solid #999;
+	white-space:nowrap;
+	width:60px
+}
+
+.editPanel  input[type='text'] ,.editPanel  input[type='password']{
+	border: 0;
+	border-bottom: 1px solid #999;
+	color: #333;
+	margin: 5px;
+	width: 120px;
+	background: none;
+	font-family: '宋体';
+	font-size: 12px;
+	height: 18px;
+	padding: 2px;
+	line-height: 18px
+}
+.editPanel select {
+	width: 120px;
+	margin: 5px;
+	height: 24px
+}
+.editPanel td {
+	padding: 2px 10px;
+	border: 1px solid #999;
+	text-align: left;
+}
+.dialog-button{
+	text-align: center;
+	padding-top: 25px;
+}
+
+.combo {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.combo .combo-text {
+  font-size: 12px;
+  border: 0px;
+  line-height: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0px 2px;
+  *margin-top: -1px;
+  *height: 18px;
+  *line-height: 18px;
+  _height: 18px;
+  _line-height: 18px;
+  vertical-align: baseline;
+}
+.combo-arrow {
+  width: 18px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.combo-arrow-hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+.combo-panel {
+  overflow: auto;
+}
+.combo-arrow {
+  background: url('../images/combo_arrow.png') no-repeat center center;
+}
+.combo,
+.combo-panel {
+  background-color: #ffffff;
+}
+.combo {
+  border-color: #95B8E7;
+  background-color: #ffffff;
+}
+.combo-arrow {
+  background-color: #E0ECFF;
+}
+.combo-arrow-hover {
+  background-color: #eaf2ff;
+}

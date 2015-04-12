@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+label.error {
+	 background:url("images/unchecked.gif") no-repeat 0px 0px;
+	 display: none;
+  	 font-size:12px;
+     color: #EA5200;;
+     padding-left: 16px;
+     padding-bottom: 2px;
+	 width:40px;
+}
+ label.check{
+	background:url('images/checked.gif') no-repeat 0px 0px;
+}
+.common-form label.error { 
+ background:url("images/unchecked.gif") no-repeat 0px 2px;
+} 
+.common-form label.check { 
+ background:url("images/checked.gif") no-repeat 0px 2px;
+} 

@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a,img {
+	border: 0;
+}
+
+body {
+	font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li img {
+	padding-left: 10px;
+	margin-right: 7px;
+}
+
+.menu {
+	width: 100%;
+	height:100%;
+	background: #f3f3f3;
+	border-right: 1px solid #d5d5d5;
+	overflow:auto;
+}
+
+.menu-title {
+	border-bottom: 1px solid #d5d5d5;
+	height: 38px;
+	line-height: 38px;
+	text-align: left;
+}
+
+.menu li a {
+	background: #fbfbfb;
+	border-bottom: 1px solid #d5d5d5;
+	height: 38px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	display: block;
+	text-decoration: none;
+	color: #666;
+	line-height: 38px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.menu li  ul li a {
+	border-bottom: 1px solid #d5d5d5;
+	border-top: 1px solid #fff;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+.menu li a:visited {
+	color: #666
+}
+
+.menu li a:hover {
+	color: #32589a;
+	font-weight: bold;
+}
+
+.menu li a:active {
+	color: #999
+}
+
+.menu li a.current{
+	color: #32589a;
+	font-weight: bold;
+}
+.menu li ul li  a {
+	padding-left: 30px;
+}
+
+.menu li ul li ul li a {
+	padding-left: 40px;
+}
+
+.menu li ul li ul li ul li a {
+	padding-left: 60px;
+}
+
+.menu span.level_one {
+	width: 4px;
+	height: 14px;
+	background: #335980;
+	float: left;
+	margin-top: 12px;
+	margin-right: 8px;
+}
+
+.menu span.unfold {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 5px solid transparent;
+	float: right;
+	margin-right: 10px;
+	margin-top: -25px;
+	border-top-color: #999;
+}
+
+.menu span.fold {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 5px solid transparent;
+	float: right;
+	margin-right: 10px;
+	margin-top: -25px;
+	border-left-color: #999;
+}
+
