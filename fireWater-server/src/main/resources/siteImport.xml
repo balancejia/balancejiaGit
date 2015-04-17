@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sheet>
+	<ClassName>com.thx.fireWater.model.MapSite</ClassName>
+	<CheckClassName>com.thx.fireWater.service.ImportChecker
+	</CheckClassName>
+	<!-- 顺序要和Excel文件中的顺序一致 -->
+	<Columns>
+		<Column>
+			<Header>编码号</Header>
+			<EntityField>siteId</EntityField>
+		</Column>
+		<Column>
+			<Header>位置</Header>
+			<EntityField>siteName</EntityField>
+		</Column>
+		<Column>
+			<Header>经度</Header>
+			<EntityField>longitude</EntityField>
+		</Column>
+		<Column>
+			<Header>纬度</Header>
+			<EntityField>latitude</EntityField>
+		</Column>
+		<Column>
+			<Header>无水</Header>
+			<EntityField>field1</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>漏水</Header>
+			<EntityField>field2</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>压力不足</Header>
+			<EntityField>field3</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>锈蚀</Header>
+			<EntityField>field4</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>埋压</Header>
+			<EntityField>field5</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>圈占</Header>
+			<EntityField>field6</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>毁坏</Header>
+			<EntityField>field7</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>塌井</Header>
+			<EntityField>field8</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>井盖</Header>
+			<EntityField>field10</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>出水盖</Header>
+			<EntityField>field11</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>顶盖</Header>
+			<EntityField>field12</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>闸阀</Header>
+			<EntityField>field13</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>出水口</Header>
+			<EntityField>field14</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>放水阀</Header>
+			<EntityField>field15</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>上水阀</Header>
+			<EntityField>field16</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+			</Dictionary>
+		</Column>
+		<Column>
+			<Header>可否使用</Header>
+			<EntityField>field0</EntityField>
+			<Dictionary>
+				<Mapping fieldValue="1">√</Mapping>
+				<Mapping fieldValue="0">×</Mapping>
+			</Dictionary>
+		</Column>
+	</Columns>
+</Sheet>
